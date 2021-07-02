@@ -530,12 +530,6 @@ main {
 		place-content: center;
 	  }
 	
-	  img:hover {
-		  transition: 2s;
-		  width: 200px;
-	
-	
-	  }
 
 	
 }
