@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="estilos\style2.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=
+    Roboto:wght@100&display=swap" rel="stylesheet">
+
+	<title>StreamStore</title>
+</head>
+<!-- Empieza cuerpo de página-->
+<body>
+	<header>
+		<img src="imagenes/streamstore.jpg" alt="Mi empresa">
+	
+		<nav>
+		  <ul class="menu">
+			<li>
+			  <a href="index.html">Inicio</a>
+			</li>
+			<li>
+			  <a href="categories.html">Categorias</a>
+	
+			  <ul class="submenu">
+				<li>
+				  <a href="promotions.html">Promociones</a>
+				</li>
+				<li>
+				  <a href="recentlyadded.html">Novedades</a>
+				</li>
+				</ul>
+			</li>
+			<li>
+			  <a href="contacto.html">Contacto</a>
+			</li>
+			</ul>
+		</nav>
+	  </header> 
+<br>
+
+
+<!-- Formulario para llenar -->
+<form action="enviar.php" method="POST"
+enctype="multipart/form-data">
+			<fieldset>
+				<legend>Envía tu recomendación</legend>
+				<label for="nombreyapellido" > Nombre y Apellido </label>
+				<input type="text" name="
+				nombreyapellido" maxlength="100">
+				
+				<br>
+				<label> Comprador </label>
+
+					<input type="radio" name="sexo" value=
+					"masculino">
+
+					<label> Visitante </label>
+					<input type="radio" name="sexo" value=
+					"femenino">
+
+				<br>
+				<textarea class="pcolor"> Escribe aquí tus sugerencias</textarea>
+
+			<h5>Selecciona el servicio streaming para recibir novedades</h5>
+			<select name="streamings">
+				<option value="Mubi">Mubi</option>
+				<option value="Paramount">Paramount</option>
+				<option value="Apple TV">Apple TV</option> <!--el verde para nombrar el valor. lo blanco muestra el nombre en el cliente-->
+				<option value="Crunchyroll">Crunchyroll</option>
+				<option value="Hulu">Hulu</option>
+				
+			<br>
+
+			
+				<input type="submit" name="Enviar formulario" value="Enviar"/> <!-- Opción -->
+				<input type="reset" name="Limpiar formulario" value="Limpiar"/> <!-- Opción 2-->
+
+				</fieldset>
+</form>
+<!--ENLACE A BLOG-->
+<div>
+	<p><a href="blog.html"> Visita nuestra blog
+</div>
+<br>
+
+<!-- Fin de página Footer -->
+<footer class="footer"> <!-- Fin de página -->
+	<p>Esta web fue realizada  por Diego Bandhy <img src="imagenes/wasap.jpg" alt="wasap"> </p>
+</footer>
+</html>

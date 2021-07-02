@@ -1,0 +1,234 @@
+/* METODOLOGÍA BEM */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #F6F6FE;
+	font-family: 'armenian', sans-serif;
+	font-size: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.contenedor { 
+	max-width: 1000px;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 1em;
+}
+
+.contenedor__cards {
+	margin: 70px 0;
+}
+
+.card {
+	background: #FFF;
+	border-radius: 15px;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.card__thumbnail {
+	margin-right: 20px;
+	border-radius: 10px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.card__img {
+	width: 100%;
+}
+
+.card__titulo {
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+.card__enlace {
+	color: #000;
+}
+
+.card__extracto {
+	line-height: 28px;
+	color: #6D6D6D;
+	margin-bottom: 20px;
+}
+
+.boton {
+	border: none;
+	min-width: 180px;
+	height: 50px;
+	padding: 0 30px;
+	background: #000;
+	color: #fff;
+	display: inline-block;
+	border-radius: 100px;
+	text-decoration: none;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #403CC2;
+	transition: .3s ease all;
+}
+
+.boton__texto {
+	font-weight: 600;
+}
+
+.boton:hover {
+	background: #1B1881;
+	text-decoration: none;
+}
+
+.boton--absolute {
+	position: absolute;
+	right: 20px;
+	bottom: -25px;
+}
+
+.boton--verde {
+	background: #7BA771;
+}
+
+.boton--verde:hover {
+	background: #437837;
+}
+
+
+/* PARA NO CAMBIAR LA CONFIGURACIÓN DE <DIV> COPIO EL STYLE.CSS */
+/* Header */
+
+h1 {
+	color: #D9C0A3;
+	font-weight: bold;
+}
+
+h2 {
+	color: #463C5F;
+	font-style: italic;
+}
+
+h3 {
+	color: #D9C0A3;
+	font-style: normal;
+}
+
+
+/* TABLAS */
+
+table tr td { /*hace caso al último contenido. Padre table tr, hijo td*/
+	background-color: #ccccc;
+	widht: 500px;
+	height: 500px;
+	border:1px solid black;
+    border-spacing:10px;
+    align-content: center;
+      
+}
+
+/* Secciones */
+
+section article{
+	padding: 50px 30px 20px 60px;  /* centra el contenido */
+
+	marging left: 40px;
+	background-color: #7C0706
+}
+.bordesRedondeados {
+	border-radius: 100px;
+}
+
+#italica { /*ID para crear crear estilos muy específicos*/
+	font-style: italic;
+}
+
+textarea {
+	color: yellowgreen;
+
+}
+
+/* Footer */
+
+footer {
+	font-style: italic;
+}
+
+.pcolor {
+	color: darkgoldenrod;
+}
+
+/* Posición de Textos */
+
+.centrar {
+	text-align: center;
+}
+.aLaDerecha {
+	text-align: right;
+}
+.aLaIzquierda {
+	text-align: left;
+}
+
+.interlineado {
+	line-height: 1.6 ;
+}
+
+/* BOX MODEL */
+
+ 
+
+/* Imágenes */
+
+
+img {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+	width: 150px;
+  }
+  
+  img:hover {
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+  
+ .ImagenConEnlace{
+	 background-image: url(https://web.whatsapp.com/);
+ }
+
+
+ p, 
+ul {
+  border: 2px solid rebeccapurple;
+  padding: .5em;
+}
+
+.block,
+li {
+  border: 2px solid rgb(173, 167, 167);
+  padding: .5em;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.block {
+  display: block;
+}      
+
