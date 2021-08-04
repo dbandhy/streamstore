@@ -1,26 +1,59 @@
-/* Header 
-* {
-		
-	display: flexbox;
-	appearance: none;
-	background-color: transparent;
-	border: 20;
-	border-radius: 50;
+/* Overlay / Texto en imágenes */
+
+.container {
+	position: relative;
+	width: 50%;
+	max-width: 300px;
 	box-sizing: content-box;
-	margin: 50;
-	padding: 50;
+  }
+
+  .image {
+	display: block;
+	width: 100%;
+	height: auto;
+  }
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 88%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+	opacity: 1;
+  }
+
+
+/* Header */
+
+
+*{
+	
+	display: flexbox;
 	vertical-align: text-bottom;
-	line-height: 100px
+	
+	
 			
 
 }
 
 */
 
-* {
+*/* {
+	display: stretch;
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	
+	
   }
 
 
@@ -47,11 +80,11 @@
 	display: flexbox;
 	margin-left: 100px;
 	position: relative;
-	line-height: 50px;
+	line-height: 100px;
 	 
 	/*Opción 2mline-height normal a los li. Pero le agrego padding top y bottom*/
 
-	line-height: 1;
+	line-height: 100px;
 	padding: 17px 0;
   }
   
@@ -60,16 +93,16 @@
 	border-radius: 2px;
   }
   
-  /* nav li a:hover {
-	color: green;
-  } */
+ nav li a:hover {
+	color: rgb(63, 147, 196);
+  }
   
   .submenu {
 	display: none;
-	background: rgb(26, 26, 26);
+	background: rgb(0, 0, 0);
 	position: absolute;
 	left: 0;
-	top: 47px;
+	top: 100px;
 	width: 140px;
   }
   
@@ -84,7 +117,7 @@
   }
   
   .submenu li:hover {
-	background: rgb(25, 25, 26);
+	background: rgb(27, 27, 27);
   }
   
 
@@ -107,6 +140,13 @@
 	background: rgb(32, 32, 32);
 	padding: 0 20px;
 	line-height: 0;
+}
+
+header img {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+	width: 150px;
   }
   
   nav {
@@ -144,7 +184,7 @@
   
   .submenu {
 	display: none;
-	background: rgb(59, 57, 59);
+	background: rgb(134, 132, 134);
 	position: absolute;
 	left: 0;
 	top: 47px;
@@ -162,7 +202,7 @@
   }
   
   .submenu li:hover {
-	background: rgb(102, 100, 104);
+	background: rgb(169, 165, 173);
   }
   
 
@@ -213,7 +253,7 @@ h3 {
 
 li {
 	align-content: center;
-	overflow: hidden;
+	overflow: scroll;
 	
 }
 /* TABLAS
@@ -239,15 +279,15 @@ th {
     border-spacing:10px;
 
 }
-*/
+
 /* Secciones */
 
-section article{
+section article {
 	padding: 50px 30px 20px 60px;  /* centra el contenido */
-*/
-	marging left: 40px;
+	margin-left: 40px;
 	background-color: #7C0706
 }
+
 .bordesRedondeados {
 	border-radius: 100px;
 }
@@ -290,36 +330,93 @@ footer {
 /* BOX MODEL */
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: start;
+    display: inline-block;
+    align-items: stretch;
     flex-direction: row (4);
-    max-height: 100px;
+    max-height: 200px;
   }
   .cards img {
-    margin: 10px;
-    border: 2px solid #000;
-    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
-    max-width: 23vw;
+    
+	size: 10px;
+	margin: 1px;
+    border: 1px solid #000;
+    box-shadow: rgba(0,0,0,0.3); 
+    max-width: 23px;
   } 
 
 /* Imágenes */
 
 
-img {
-	border: 1px solid #ddd;
-	border-radius: 4px;
-	padding: 5px;
-	width: 150px;
-  }
   
-  img:hover {
-	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+img:hover {
+	box-shadow: 0 0 2px 1px rgba(48, 171, 212, 0.5);
   }
   
  .ImagenConEnlace{
 	 background-image: url(https://web.whatsapp.com/);
  }
+
+/* CARROUSEL */
+
+
+ .pic-ctn {
+	width: 300px;
+	height: 400px;
+	position: absolute ;
+  }
+
+
+  
+  @keyframes display {
+	0% {
+	  transform: translateX(200px);
+	  opacity: 0;
+	}
+	10% {
+	  transform: translateX(0);
+	  opacity: 1;
+	}
+	20% {
+	  transform: translateX(0);
+	  opacity: 1;
+	}
+	30% {
+	  transform: translateX(-200px);
+	  opacity: 0;
+	}
+	100% {
+	  transform: translateX(-200px);
+	  opacity: 0;
+	}
+  }
+  
+  .pic-ctn {
+	position: relative;
+	width: 100vw;
+	height: 300px;
+	margin-top: 15vh;
+  }
+  
+  .pic-ctn > img {
+	position: absolute;
+	top: 0;
+	left: calc(50% - 200px);
+	opacity: 0;
+	animation: display 10s infinite;
+  }
+  
+  img:nth-child(2) {
+	animation-delay: 2s;
+  }
+  img:nth-child(3) {
+	animation-delay: 4s;
+  }
+  img:nth-child(4) {
+	animation-delay: 6s;
+  }
+  img:nth-child(5) {
+	animation-delay: 8s;
+  }
 
 
  p, 
@@ -344,21 +441,29 @@ ul {
 
 
 
-div {
-	/* propiedades decorativas */
+/*carousel*/
+
+.carousel-inner > .item > img {
+	width: 80%;
+	margin: auto;
+}
+
+
+/*div {
+	/* propiedades decorativas
 	border: solid 1px black;
 	padding: 20px;
 	display: inline-block;
 	font-size: 32px;
 	font-family: Arial;
-	 /* propiedades que hacen el "problema" */
+	 /* propiedades que hacen el "problema" *
 	width: 400px;
-	height: 110px;
-   }
+	height: 200px;
+   }*/
 
 main {
-	text-align: center;
-	margin-left: 400px;
+	text-align: start;
+	margin-left: 200px;
 }
 
 .footer {
@@ -374,6 +479,14 @@ main {
 	overflow:unset;
 	
   }
+
+footer img {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+	width: 130px;
+  }
+
 
 
 /*GRID¨*/
@@ -452,11 +565,11 @@ main {
 		border: 1px solid rgb(228, 223, 223);
 		box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
 		max-width: 2px
-		transform: scale(1, 1.5);
+		
 	  } 
 	
 	.logos {
-		display: inline-flexbox;
+		display: flexbox;
 		flex-wrap: nowrap;
 		align-items: center;
 		flex-direction: column;
