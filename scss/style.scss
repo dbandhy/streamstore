@@ -8,7 +8,7 @@ header {
   
   
   img {
-	border: 1px solid #ddd;
+	border: 1px solid rgb(255, 255, 255);
 	border-radius: 4px;
 	padding: 5px;
 	width: 150px;
@@ -41,7 +41,16 @@ section {
 	padding: 50px 30px 20px 60px;  /* centra el contenido */
 	margin-left: 40px;
 	background-color: #7C0706
+	
+		img {
+			width: 200px; 
+			height: 200px;
+			position:static;
+		}
+	
 	}
+
+	
 }
 
 /* FOOTER */

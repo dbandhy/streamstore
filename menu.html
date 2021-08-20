@@ -9,11 +9,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- CDN de Bootstrap del CSS -->
   <!--CSS-->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  
   <!--Meta etiquetas-->
   <meta name="description" content="Venta de artículos de series y pelìculas originales de los servicios de streaming">
   <!--Keywords-->
-  <meta name="keywords" content="streaming, store, ecommerce, series, ropa, netflix, amazon, hbo, disney, descuentos, novedades, cine, television, películas">
+  <meta name="keywords" content="streaming, store, ecommerce, novedades, ropa, artículos, Zapatillas">
   <!-- favicon-->
   <link rel="shortcut icon" href="imagenes/streamstore.jpg" type="image/x-icon">
   <!-- open graph -->
@@ -27,7 +27,8 @@
 
 <style>
   .carousel-inner > .item > img {
-      width: 80%;
+      width: 100%;
+      height: 80%;
       margin: auto;
   }
 </style>
@@ -40,7 +41,7 @@
 	<h2>from screen to your door</h2>
 
 <header>
-    <img src="imagenes/streamstore.jpg" alt="Mi empresa">
+    <img src="imagenes/streamstore.jpg" alt="logo StreamStore">
 
     <nav>
       <ul class="menu">
@@ -71,18 +72,18 @@
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
  <div class="container">
    <div class="row">
-     <div class="row">
-             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+     <div class="row" class="col-lg-6">
+             <div class="col-lg-6 col-md-4 col-xs-6">
                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
-                   img src="imagenes/netflixlogo.jpg" width=900px height=900
+                   img src="imagenes/netflixlogo.jpg"  
                     data-target="#image-gallery"> 
-                     <img class="img-thumbnail"
-                        src="imagenes/netflixlogo.jpg" width=900px height=900
+                     <img class="img-thumbnail" 
+                        src="imagenes/netflixlogo.jpg"  
                           alt="Netflix logo">
  
                  
              </div>
-             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+             <div class="col-lg-6 col-md-4 col-xs-6">
                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
                  img src="imagenes/disneylogo.jpg" 
                     data-target="#image-gallery">
@@ -96,16 +97,16 @@
          
 
        <div class="row">
-         <div class="row">
-           <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+         <div class="row" class="col-lg-6">
+           <div class="col-lg-5 col-md-4 col-xs-6">
                <img class="img-thumbnail"
-            src="imagenes/amazonlogo.jpg" width=900px height=900
+            src="imagenes/amazonlogo.jpg" width=1200px height=1200
                         alt="amazon logo">
                
            </div>
               
-              <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                  <img class="img-thumbnail" width=900px height=900
+              <div class="col-lg-5 col-md-4 col-xs-6">
+                  <img class="img-thumbnail" width=1200px height=1200
                         src="imagenes/hbologo.jpg" 
                         alt="hbo logo">
             
@@ -113,6 +114,27 @@
             </div>
             </div>
          </div>
+        </div>
+
+
+        <div class="span6" >
+          <h5 class="title-bg" style="padding-bottom: 12px;">Clientes Recientes <small>que nos comentaron</small>
+            <button id="btn-client-next" class="btn btn-inverse btn-mini" type="button">»</button>
+            <button id="btn-client-prev" class="btn btn-inverse btn-mini" type="button">«</button>
+          </h5>
+          <div id="clientCarousel" class="carousel slide no-margin">
+            <div class="carousel-inner">
+              <div class="active item">
+                <p class="quote-text">"Amé las zapatillas de Volver al futuro y la variedad de productos clásicos"<cite>- Esteban, 36 años</cite></p>
+              </div>
+              <div class="item">
+                <p class="quote-text">"Los mejores productos de las series de Netflix y Amazon"<cite>- Luciana, 29 años</cite></p>
+              </div>
+              <div class="item">
+                <p class="quote-text">"Productos muy difíciles de conseguir los escontré, al fin, en StreamStore"<cite>- Sofía, 32 años</cite></p>
+              </div>
+            </div>
+          </div>
         </div>
  
  <br>
@@ -134,6 +156,10 @@
  crossorigin="anonymous"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> <!-- CDN de la librería de Popper  -->
  
   
 
@@ -256,6 +282,6 @@
 
 <!-- Footer -->
 <footer class="footer"> <!-- Fin de página -->
-	<p>Esta web fue realizada  por Diego Bandhy <img src="imagenes/wasap.jpg" alt="wasap"> </p>
+	<p>Esta web fue realizada  por Diego Bandhy <img src="imagenes/wasap.jpg" alt="enlace de wasap de Diego Bandhy"> </p>
 </footer>
 </html>

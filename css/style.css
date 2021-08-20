@@ -6,7 +6,7 @@ header {
   line-height: 0;
 }
 header img {
-  border: 1px solid #ddd;
+  border: 1px solid white;
   border-radius: 4px;
   padding: 5px;
   width: 150px;
@@ -32,7 +32,10 @@ section article {
   padding: 50px 30px 20px 60px;
   /* centra el contenido */
   margin-left: 40px;
-  background-color: #7C0706;
+  background-color: #7C0706 img;
+  background-color-width: 200px;
+  background-color-height: 200px;
+  background-color-position: static;
 }
 
 /* FOOTER */

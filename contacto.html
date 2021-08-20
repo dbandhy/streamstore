@@ -9,11 +9,11 @@
     Roboto:wght@100&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- CDN de Bootstrap del CSS -->
-
+	  <link rel="stylesheet" type="text/css" href="css/style.css">
 	<!--Meta etiquetas-->
     <meta name="description" content="Venta de artículos de series y pelìculas originales de los servicios de streaming">
     <!--Keywords-->
-    <meta name="keywords" content="streaming, store, ecommerce, series, ropa, netflix, amazon, hbo, disney, descuentos, novedades, cine, television, películas">
+    <meta name="keywords" content="streamtore, ecommerce, contacto, mensaje, mail, recomendaciones, descuentos, datos">
     <!-- favicon-->
     <link rel="shortcut icon" href="imagenes/streamstore.jpg" type="image/x-icon">
     <!-- open graph -->
@@ -28,7 +28,7 @@
 <!-- Empieza cuerpo de página-->
 <body>
 	<header>
-		<img src="imagenes/streamstore.jpg" alt="Mi empresa">
+		<img src="imagenes/streamstore.jpg" alt="Logo de StreamStore">
 	
 		<nav>
 		  <ul class="menu">
@@ -59,7 +59,7 @@
 <!-- Formulario para llenar -->
 <form action="enviar.php" method="POST"
 enctype="multipart/form-data">
-			<fieldset>
+			<fieldset class="col-xs-10 col-md-6">
 				<legend>Envía tu recomendación</legend>
 				<label for="nombreyapellido" > Nombre y Apellido </label>
 				<input type="text" name="
@@ -101,12 +101,71 @@ enctype="multipart/form-data">
 	<p><a href="blog.html"> Visita nuestra blog </a>
 </div>
 
+<div class="col-xs-10 col-md-6" class="row2">
+	<div class="span6" class="col-xs-10 col-md-6">
+	  <h5 class="title-bg" style="padding-bottom: 50px margin-left=40px"> Entradas <small>artículos</small>
+		<button id="btn-blog-next" class="btn btn-inverse btn-mini" type="button">»</button>
+		<button id="btn-blog-prev" class="btn btn-inverse btn-mini" type="button">«</button>
+	  </h5>
+	  <div id="blogCarousel" class="carousel slide">
+		<div class="carousel-inner">
+		  <div class="active item"> <a href="pages/blog-single.php"><img src="imagenes/supermanandlois.jpg" alt="imagen de superman and lois" class="align-left blog-thumb-preview"></a>
+			<div class="post-info clearfix">
+			  <h4><a href="pages/blog-single.php">Superman vuelve a la pantalla</a></h4>
+			  <ul class="blog-details-preview">
+				<li><i class="icon-calendar"></i><strong>Posted on:</strong> Agosto 4, 2021
+				</li><li>
+				</li><li><i class="icon-user"></i><strong>Posted by:</strong> <a href="#">Admin</a>
+				</li><li>
+				</li><li><i class="icon-comment"></i><strong>Comentarios:</strong> <a href="#">12</a>
+				</li><li>
+				</li>
+			  </li></ul>
+			</div>
+			<p class="blog-summary">Con la muerte de su madre, el déspido de su trabajo e hijos adolescentes que se van dando cuenta de las cosas inicia esta nueva aventura del superhéroe <a href="#">Leer más</a></p>
+		  </div>
+		  <div class="item"> <a href="pages/blog-single.php"><img src="imagenes/nicolekidman.jpg" alt="nicole kidman en entrega de premios" class="align-left blog-thumb-preview"></a>
+			<div class="post-info clearfix">
+			  <h4><a href="pages/blog-single.php">Una actriz que no descansa</a></h4>
+			  <ul class="blog-details-preview">
+				<li><i class="icon-calendar"></i><strong>Posted on:</strong> Sept 4, 2021
+				</li><li>
+				</li><li><i class="icon-user"></i><strong>Posted by:</strong> <a href="#">Admin</a>
+				</li><li>
+				</li><li><i class="icon-comment"></i><strong>Comentarios:</strong> <a href="#">18</a>
+				</li><li>
+				</li>
+			  </li>
+			</ul>
+			</div>
+			<p class="blog-summary">Nicole Kidman toma relevancia en la plataforma de HBO. <a href="#">Leer más</a></p>
+		  </div>
+		  <div class="item"> <a href="pages/blog-single.php"><img src="imagenes/adultomayor.jpg" alt="animacion de adulto mayor viendo TV" class="align-left blog-thumb-preview"></a>
+			<div class="post-info clearfix">
+			  <h4><a href="pages/blog-single.php">¿Las plataformas de Streaming son para los adultos mayores?</a></h4>
+			  <ul class="blog-details-preview">
+				<li><i class="icon-calendar"></i><strong>Posted on:</strong> Sept 15, 2021
+				</li><li>
+				</li><li><i class="icon-user"></i><strong>Posted by:</strong> <a href="#">Admin</a>
+				</li><li>
+				</li><li><i class="icon-comment"></i><strong>Comentarios:</strong> <a href="#">9</a>
+				</li>
+			  </li></ul>
+			</div>
+			<p class="blog-summary">Entrevista a diseñador UX para que nos responda esta pregunta <a href="#">Leer más</a></p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+  </div>
+
 <table style="max-width: 600px; padding: 10px; margin: 0 auto;">
 	<!--Fila-->
 	 
 	 <tr>
 	   <td>
-		 <img src="imagenes/streamstore.jpg" alt="" width="100%">
+		 <img src="imagenes/streamstore.jpg" alt="imagen logo empresa StreamStore" width="100%">
 	   </td>
 	 </tr>
 	 
@@ -129,7 +188,7 @@ enctype="multipart/form-data">
 		 <!--Redes Sociales-->
 		 <div style="text-align: center;">
 		   <a href="https://www.youtube.com/user/NewOnNetflix" style="text-decoration: none;">
-			 <img src="https://i.ibb.co/DgFf9QG/yt.jpg" alt="imagen youtube" style="width: 40px; border-radius: 40px;">
+			 <img src="https://i.ibb.co/DgFf9QG/yt.jpg" alt="logo de youtube" style="width: 40px; border-radius: 40px;">
 		   </a>
 		   <a href="https://www.instagram.com/netflixlat/?hl=es-la" style="text-decoration: none;">
 		   <img src="https://i.ibb.co/nBxZwyh/gratis-png-inicio-de-sesion-en-redes-sociales-instagram-ig-icono-de-instagram.png" style="width: 40px; border-radius: 40px;" alt=" imagen redes">
@@ -157,6 +216,6 @@ enctype="multipart/form-data">
 
 <!-- Fin de página Footer -->
 <footer class="footer"> <!-- Fin de página -->
-	<p>Esta web fue realizada  por Diego Bandhy <img src="imagenes/wasap.jpg" alt="wasap"> </p>
+	<p>Esta web fue realizada  por Diego Bandhy <img src="imagenes/wasap.jpg" alt="wasap de Diego"> </p>
 </footer>
 </html>

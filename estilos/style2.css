@@ -7,9 +7,10 @@
 	box-sizing: content-box;
   }
 
-  .image {
-	display: block;
-	width: 100%;
+  .img {
+	display:inline-block;
+	width: 200px;
+	height: 250px;
 	height: auto;
   }
 
@@ -601,6 +602,8 @@ footer img {
 }
 
 
+
+
 /*VISIÓN DIURNA*/
 
 
@@ -647,3 +650,79 @@ footer img {
 	
 }
 
+
+/*Galeria de promociones*/ 
+
+.gallery-title
+{
+    font-size: 36px;
+    color: #D9C0A3;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: static;
+    width: 7.5%;
+    left: 66.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+	text-align: center;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #D9C0A3;
+    border-radius: 5px;
+    text-align: center;
+    color: #D9C0A3;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #D9C0A3;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #D9C0A3;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #D9C0A3;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+	height: 10%;
+}
+
+.gallery_product
+{
+    margin-bottom: 20px;
+}
+
+.overlay2 {
+	width: 365px;
+	position: static; 
+	bottom: 2; 
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+	color: #f1f1f1; 
+	width: 88%;
+	transition: .5s ease;
+	opacity:0;
+	color: white;
+	font-size: 20px;
+	padding: 15px;
+	text-align: center;
+  }
+  
+  .container:hover .overlay2 {
+	  opacity: 1;
+	}
